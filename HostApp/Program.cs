@@ -5,6 +5,7 @@ using Orleans.Runtime.Configuration;
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
+using Contracts;
 
 namespace HostApp
 {
@@ -41,8 +42,8 @@ namespace HostApp
             config.AddMemoryStorageProvider();
 
             var builder = new SiloHostBuilder()
-                .UseConfiguration(config)
                 .AddApplicationPartsFromReferences(typeof(HelloGrain).Assembly)
+                .UseConfiguration(config)
                 .ConfigureLogging(logging => logging.AddConsole());
 
             var host = builder.Build();

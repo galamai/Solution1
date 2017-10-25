@@ -8,7 +8,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.0.0" />
     <PackageReference Include="Microsoft.Orleans.Client" Version="2.0.0-preview4-20171024" />
-    <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator" Version="2.0.0-preview3-20170913" />
   </ItemGroup>
 
   <ItemGroup>
